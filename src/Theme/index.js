@@ -1,9 +1,12 @@
 import { createTheme } from '@mui/material/styles';
 
+//Data
+import { data } from 'Data/data';
+
 // Create a theme instance.
 const theme = createTheme({
     typography: {
-        fontFamily: "Inter"
+        fontFamily: data.MainTheme.fonts.primary
         // 400 Regular
         // 500 Medium
         // 600 Semi-Bold
@@ -12,27 +15,27 @@ const theme = createTheme({
     },
     palette: {
         text: {
-            primary: "#121315", // Default Text Color
-            secondary: "#FF4F3E" // Secondary Text Color
+            primary: data.MainTheme.colors.text.primary, // Default Text Color
+            secondary: data.MainTheme.colors.text.secondary // Secondary Text Color
         },
         background: {
-            default: "#FFFFFF" // Default Background Color
+            default: data.MainTheme.colors.background.default // Default Background Color
         },
         primary: {
-            main: "#FF4F3E", // Document Main Primary Color
-            light: "#CECECE", // Document Light Color (Button Background)
-            box_shadow_black: " #0000001c", // Box Shadow Black (Header Sticky)
-            success: "#4CAF50", // SuccessMessage Color
-            box_shadow_client: "#0000001c", /// Box Shadow Clinet Slider
-            box_show_blog: "#FF4F3E21", //Box Shadow Blog Section
-            box_shadow_blog_2: "#0000001a", // Box Shadow Blog Category
-            divider: "#AEAEAE", // Divider Color (All Section Divider)
-            social_bg: "#E7E7E7", // Social Background Color
-            social_color: "#415674", // Social Icon Color
-            inputBorder: "#0000001f", //For NewsLetter Input Border Color
-            HeroGradient: "linear-gradient(to right, #FFF , #FF4F3E42)", // Gradient (Hero Section)
-            WorkGradient: "linear-gradient(to right, #FF4F3E42, #FFF)", // Gradient (Portfolio Section)
-            ContactGradient: "linear-gradient(to right, #FF4F3E42, #FFFFFF4A)", // Gradient (Contact Section)
+            main: data.MainTheme.colors.primary.main, // Document Main Primary Color
+            light: data.MainTheme.colors.primary.light, // Document Light Color (Button Background)
+            box_shadow_black: data.MainTheme.colors.primary.box_shadow_black, // Box Shadow Black (Header Sticky)
+            success: data.MainTheme.colors.primary.success, // SuccessMessage Color
+            box_shadow_client: data.MainTheme.colors.primary.box_shadow_client, /// Box Shadow Clinet Slider
+            box_show_blog: data.MainTheme.colors.primary.box_show_blog, //Box Shadow Blog Section
+            box_shadow_blog_2: data.MainTheme.colors.primary.box_shadow_blog_2, // Box Shadow Blog Category
+            divider: data.MainTheme.colors.primary.divider, // Divider Color (All Section Divider)
+            social_bg: data.MainTheme.colors.primary.social_bg, // Social Background Color
+            social_color: data.MainTheme.colors.primary.social_color, // Social Icon Color
+            inputBorder: data.MainTheme.colors.primary.inputBorder, //For NewsLetter Input Border Color
+            HeroGradient: data.MainTheme.colors.primary.HeroGradient, // Gradient (Hero Section)
+            WorkGradient: data.MainTheme.colors.primary.WorkGradient, // Gradient (Portfolio Section)
+            ContactGradient: data.MainTheme.colors.primary.ContactGradient, // Gradient (Contact Section)
         }
     },
     breakpoints: {

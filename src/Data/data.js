@@ -22,6 +22,36 @@ import BlogImage from "Assets/blog/blog-1.png";
 import Logo from "Assets/header/logo.png";
 
 export const data = {
+    MainTheme: {
+        fonts: {
+            primary: "Inter"
+        },
+        colors: {
+            text: {
+                primary: "#121315",
+                secondary: "#FF4F3E"
+            },
+            background: {
+                default: "#FFFFFF"
+            },
+            primary: {
+                main: "#FF4F3E",
+                light: "#CECECE",
+                box_shadow_black: " #0000001c",
+                success: "#4CAF50",
+                box_shadow_client: "#0000001c",
+                box_show_blog: "#FF4F3E21",
+                box_shadow_blog_2: "#0000001a",
+                divider: "#AEAEAE",
+                social_bg: "#E7E7E7",
+                social_color: "#415674",
+                inputBorder: "#0000001f",
+                HeroGradient: "linear-gradient(to right, #FFF , #FF4F3E42)",
+                WorkGradient: "linear-gradient(to right, #FF4F3E42, #FFF)",
+                ContactGradient: "linear-gradient(to right, #FF4F3E42, #FFFFFF4A)"
+            }
+        }
+    },
     Hero: {
         title: "We are <br /> Code Station21",
         slogan: "Your Dream, We Build",
